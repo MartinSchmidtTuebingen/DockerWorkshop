@@ -11,7 +11,7 @@ services:
       - ./src:/var/www/html/
 
   db:
-    image: pheromonik/workshop-db:latest
+    image: pheromonik/docker-workshop:withData
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
